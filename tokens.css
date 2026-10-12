@@ -1,0 +1,65 @@
+/* Roboko Sumo · portable design tokens (Hallmark) */
+
+:root {
+  /* Paper / ink — warm-tinted, never pure */
+  --color-paper: oklch(94% 0.014 80);
+  --color-paper-2: oklch(90% 0.016 78);
+  --color-rule: oklch(76% 0.014 75);
+  --color-neutral: oklch(52% 0.01 70);
+  --color-muted: oklch(40% 0.01 60);
+  --color-ink: oklch(19% 0.012 55);
+
+  /* Accent — vermillion hanko red, single hue, <5% of viewport */
+  --color-accent: oklch(56% 0.19 38);
+  --color-accent-deep: oklch(47% 0.17 38);
+  --color-accent-ink: oklch(97% 0.008 80);
+
+  /* Bleed — ink block sections */
+  --color-bleed: oklch(16% 0.012 55);
+  --color-bleed-ink: oklch(93% 0.008 80);
+  --color-bleed-muted: oklch(70% 0.008 70);
+
+  --color-focus: var(--color-accent-deep);
+
+  /* Type — 2+1: Anton display · Switzer body · Geist Mono outlier */
+  --font-display: "Anton", "Arial Narrow", sans-serif;
+  --font-body: "Switzer", "Segoe UI", system-ui, sans-serif;
+  --font-outlier: "Geist Mono", "Cascadia Mono", monospace;
+
+  --text-xs: 0.64rem;
+  --text-sm: 0.8rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.9531rem;
+  --text-2xl: 2.4414rem;
+  --text-display: clamp(3rem, 9vw + 1rem, 6rem);
+  --text-display-s: clamp(2.25rem, 5vw + 1rem, 3.75rem);
+
+  /* Space — 4pt scale */
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  /* Rules + z */
+  --rule-hair: 1px;
+  --rule-thick: 3px;
+  --z-base: 1;
+  --z-raised: 10;
+  --z-sticky: 200;
+}

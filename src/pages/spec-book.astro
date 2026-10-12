@@ -1,0 +1,92 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Reveal from '../components/Reveal.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Specification book — Roboko Sumo"
+  description="What the Roboko Sumo specification book is, what it covers, and the Edition 3 PDF download."
+>
+  <Header />
+  <main id="main">
+    <section class="section" aria-labelledby="book-title">
+      <div class="wrap">
+        <h1 class="display enter" id="book-title" style="font-size: var(--text-display-s);">
+          The book is the law.
+        </h1>
+        <p class="hero-sub enter" style="--d:100ms">
+          The specification book is the rulebook the inspectors enforce.
+          Edition&nbsp;3. If a limit is not in the book, it does not exist —
+          and if your machine breaks one that is, the bout is over.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="inside-title" style="padding-top: 0;">
+      <div class="wrap">
+        <Reveal>
+          <h2 class="display" id="inside-title">Inside.</h2>
+        </Reveal>
+        <Reveal delay={80}>
+          <table class="spec-sheet">
+            <tbody>
+              <tr>
+                <th scope="row">Mass limits</th>
+                <td class="value">Weigh-in figures</td>
+                <td class="hint">Limits to confirm. Full text in the PDF.</td>
+              </tr>
+              <tr>
+                <th scope="row">Footprint</th>
+                <td class="value">Size at start</td>
+                <td class="hint">Limits to confirm. Full text in the PDF.</td>
+              </tr>
+              <tr>
+                <th scope="row">Control</th>
+                <td class="value">Autonomy rules</td>
+                <td class="hint">Per class. Full text in the PDF.</td>
+              </tr>
+              <tr>
+                <th scope="row">Bouts</th>
+                <td class="value">Match format</td>
+                <td class="hint">Rounds and calls. Full text in the PDF.</td>
+              </tr>
+              <tr>
+                <th scope="row">Safety</th>
+                <td class="value">Inspection bar</td>
+                <td class="hint">Fail it, fix it. Full text in the PDF.</td>
+              </tr>
+            </tbody>
+          </table>
+        </Reveal>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="take-title" style="padding-top: 0;">
+      <div class="wrap">
+        <Reveal>
+          <div class="book">
+            <div class="book-head">
+              <strong>Take the file</strong>
+              <span>Edition 3 · PDF</span>
+            </div>
+            <div class="book-body">
+              <p>
+                Read it before you cut metal. Print it. Mark it.
+                Bring it to weigh-in.
+              </p>
+              <div>
+                <a class="slab" href="/spec-book.pdf" download>
+                  <span>Download the book</span><span class="arrow" aria-hidden="true">↓</span>
+                </a>
+                <p class="slab-caption">PDF · Edition 3 · <a href="/">← Back to the dohyo</a></p>
+              </div>
+            </div>
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

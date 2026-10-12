@@ -1,0 +1,32 @@
+---
+import Reveal from './Reveal.astro';
+---
+
+<section class="section" id="spec-book" aria-labelledby="spec-title">
+  <div class="wrap">
+    <Reveal>
+      <h2 class="display" id="spec-title">Read the book.</h2>
+    </Reveal>
+    <Reveal delay={80}>
+      <div class="book">
+        <div class="book-head">
+          <strong>Specification book</strong>
+          <span>Edition 3 · PDF</span>
+        </div>
+        <div class="book-body">
+          <p>
+            Mass limits, footprints, control rules, and bout format — everything
+            the inspectors enforce lives in this file. Build nothing until you
+            have read it.
+          </p>
+          <div>
+            <a class="slab" href="/spec-book">
+              <span>Open the book</span><span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <p class="slab-caption">What it is, what is inside, and the PDF · Edition 3.</p>
+          </div>
+        </div>
+      </div>
+    </Reveal>
+  </div>
+</section>

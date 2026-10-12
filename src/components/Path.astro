@@ -1,0 +1,43 @@
+---
+import Reveal from './Reveal.astro';
+---
+
+<section class="section" id="path" aria-labelledby="path-title">
+  <div class="wrap">
+    <Reveal>
+      <h2 class="display" id="path-title">The path.</h2>
+    </Reveal>
+    <Reveal delay={80}>
+      <ol class="steps">
+        <li>
+          <span class="stage" aria-hidden="true">1.0</span>
+          <div>
+            <h3>Enter.</h3>
+            <p>Gather your school team and register. One machine per team, one team per class.</p>
+          </div>
+        </li>
+        <li>
+          <span class="stage" aria-hidden="true">2.0</span>
+          <div>
+            <h3>Build.</h3>
+            <p>Design to the specification book. If a dimension is not in the book, ask before you cut metal.</p>
+          </div>
+        </li>
+        <li>
+          <span class="stage" aria-hidden="true">3.0</span>
+          <div>
+            <h3>Weigh in.</h3>
+            <p>Pass inspection on mass, size, and safety. Fail it and you fix it before the first bout.</p>
+          </div>
+        </li>
+        <li>
+          <span class="stage" aria-hidden="true">4.0</span>
+          <div>
+            <h3>Bout.</h3>
+            <p>Face the ring. Push your opponent out. The bracket does not forgive.</p>
+          </div>
+        </li>
+      </ol>
+    </Reveal>
+  </div>
+</section>

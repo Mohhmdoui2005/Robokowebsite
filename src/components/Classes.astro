@@ -1,0 +1,38 @@
+---
+import Reveal from './Reveal.astro';
+---
+
+<section class="section" id="classes" aria-labelledby="classes-title">
+  <div class="wrap">
+    <Reveal>
+      <h2 class="display" id="classes-title">Weight classes.</h2>
+    </Reveal>
+    <Reveal delay={80}>
+      <p class="spec-note">
+        Limits are set by the organisers. Figures below land here when confirmed —
+        until then, build to the specification book.
+      </p>
+    </Reveal>
+    <Reveal delay={140}>
+      <table class="spec-sheet">
+        <tbody>
+          <tr>
+            <th scope="row">Lightweight</th>
+            <td class="value"><span class="pending">limit to confirm</span></td>
+            <td class="hint">First-year friendly. Full text in the book.</td>
+          </tr>
+          <tr>
+            <th scope="row">Middleweight</th>
+            <td class="value"><span class="pending">limit to confirm</span></td>
+            <td class="hint">The crowded class. Full text in the book.</td>
+          </tr>
+          <tr>
+            <th scope="row">Open</th>
+            <td class="value"><span class="pending">limit to confirm</span></td>
+            <td class="hint">Bring what the rules allow. Full text in the book.</td>
+          </tr>
+        </tbody>
+      </table>
+    </Reveal>
+  </div>
+</section>

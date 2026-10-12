@@ -1,0 +1,31 @@
+---
+import Reveal from './Reveal.astro';
+---
+
+<section class="section bleed-ink" id="creed" aria-labelledby="creed-title">
+  <div class="wrap">
+    <Reveal>
+      <h2 class="display" id="creed-title">The creed.</h2>
+    </Reveal>
+    <div class="creed">
+      <Reveal>
+        <p class="creed-claim">
+          A student-built robot. A clay ring. No excuses.
+          <small>Every team designs, wires, and codes its own machine. Bought robots do not enter.</small>
+        </p>
+      </Reveal>
+      <Reveal delay={100}>
+        <p class="creed-claim">
+          We are a dohyo. We are not a demo day.
+          <small>No slides. No pitches. Your machine speaks for three minutes at a time.</small>
+        </p>
+      </Reveal>
+      <Reveal delay={160}>
+        <p class="creed-claim">
+          The push decides. Talk does not.
+          <small>Force out your opponent or survive the round. The referee records what happened.</small>
+        </p>
+      </Reveal>
+    </div>
+  </div>
+</section>

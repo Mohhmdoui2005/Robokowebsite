@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import ManifestoHero from '../components/ManifestoHero.astro';
+import Creed from '../components/Creed.astro';
+import Classes from '../components/Classes.astro';
+import Path from '../components/Path.astro';
+import Rules from '../components/Rules.astro';
+import SpecBook from '../components/SpecBook.astro';
+import Register from '../components/Register.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Roboko Sumo — Third Edition"
+  description="Student sumo robotics competition for higher-education teams. A student-built robot. A clay ring. No excuses."
+>
+  <Header />
+  <main id="main">
+    <ManifestoHero />
+    <Creed />
+    <Classes />
+    <Path />
+    <Rules />
+    <SpecBook />
+    <Register />
+  </main>
+  <Footer />
+</BaseLayout>
